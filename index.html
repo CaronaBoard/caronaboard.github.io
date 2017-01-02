@@ -1,1 +1,113 @@
-It works!
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Carona Board</title>
+    <meta name="description" content="You app for smart urban transport">
+    <meta name="keywords" content="Transport, ride, urban, car, share">
+    <meta name="author" content="Hege Refsnes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#004e89">
+
+    <style type="text/css">
+      ﻿@media only screen and (max-device-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){table,thead,tbody,th,td,tr{display:block}th{font-weight:bold}thead tr{position:absolute;top:-9999px;left:-9999px}tr{border:1px solid #000000}td{border:none;border-bottom:1px solid #000000;position:relative;padding-left:30% !important}td:before{position:absolute;top:6px;left:6px;width:25%;padding-right:10px;white-space:nowrap;font-weight:bold}td:nth-of-type(1):before{content:"Rota"}td:nth-of-type(2):before{content:"Quando"}td:nth-of-type(3):before{content:"Horário"}td:nth-of-type(4):before{content:"Motorista"}td:nth-of-type(5):before{content:""}}@media only screen and (min-device-width: 320px) and (max-device-width: 480px){body{padding:0;margin:0;width:320px}}@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){body{width:495px}}body{font:14px/1.4 'Open Sans', Arial;margin:0}#page-wrap{margin:0;width:100%}p{margin:20px 0}h1{color:#FFFFFF;font-size:2em;margin:0.4em 0 0 0}h2{font-size:1.0em;margin:0 0 0.8em 0;font-style:italic;font-weight:300;color:#FFFFFF}h3{margin:16px 0 12px 0}h4{color:#1A659E}ul{margin-bottom:2em}#passos{font-size:1.2em}td p{margin:0 30px 0 0;font-size:1em;font-style:italic;color:red}table{width:90%;border-collapse:collapse;margin:auto}tr:nth-of-type(odd){background-color:#EFEFD0}th{background-color:#1A659E;color:#FFFFFF;font-weight:bold;padding:6px}td,th{padding:6px;border:1px solid #F7C59F;text-align:left;width:auto}#button_offer{display:block;border-radius:0.4em;margin:0;background-color:#EFEFD0;color:#FF6B35;box-shadow:0.1em 0.1em 0.2em #000;padding:0.8em;text-align:center;width:30%}#button_offer a{color:#FF6B35;text-decoration:none;font-weight:bold}#button_carona{display:block;border-radius:0.4em;margin:0;background-color:#FF6B35;color:#FFF;box-shadow:0.1em 0.1em 0.2em #777;padding:0.4em;text-align:center}#button_carona a{color:#FFF;text-decoration:none;font-weight:bold}#ask_ride{display:inline;float:left;width:20%}#header{display:inline-block;width:100%;margin:auto}#topbar{background-color:#004E89;display:block;margin:0}#how_to{display:block;width:60%;padding:2% 5%;text-align:left;float:left}#title{padding:5px 0 5px 5%;width:50%;display:inline-block}#title h1{font-weight:bold}#dar_carona{display:block;width:20%;margin:1%;border-radius:0.4em;border:solid 1px #20BF55;background-color:#EFEFD0;padding:12px;text-align:center;float:left}#feedback{display:inline-block;margin:40px 30%;width:30%;border-radius:0.4em;border:solid 1px #F7C59F;background-color:#EFEFD0;padding:12px;text-align:center}a .cadastro{padding-bottom:12px;color:#A80874}a .logo{color:#FFFFFF;text-decoration:none}.depende{padding-left:12px;color:red}.sim{padding-left:12px;color:green}#main_menu{padding-top:0.7%;width:25%;display:inline-block;margin-left:15%;vertical-align:top;float:right}#title_img{float:left;width:80px;padding-right:10px}
+
+    </style>
+  </head>
+  <body>
+    <div id="page-wrap"><div id="app-main">
+    <div id="header">
+        <div id="topbar">
+            <div id="title">
+                <img alt="Logo Carona Board" id="title_img" src="images/logo.svg">
+                </img>
+                <h1>
+                    Carona Board
+                </h1>
+                <h2>
+                    Seu carro não precisa levar apenas você
+                </h2>
+            </div>
+            <div id="main_menu">
+                <div id="button_offer">
+                    <a href="http://goo.gl/forms/ohEbgkMa9i" rel="noopener">
+                        DOU CARONA!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="how_to">
+        <ol>
+            <li>
+                Encontre uma rota que passe perto do seu destino
+            </li>
+            <li>
+                Clique no botão "Quero Carona"
+            </li>
+            <li>
+                Preencha o pedido de carona e envie o pedido
+            </li>
+            <li>
+                <strong>
+                    Pronto!
+                </strong>
+                Seu colega oferecendo carona para a rota selecionada irá receber sua mensagem
+            </li>
+        </ol>
+    </div>
+    <div class="routes-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Rota
+                    </th>
+                    <th>
+                        Trajeto
+                    </th>
+                    <th>
+                        Quando
+                    </th>
+                    <th>
+                        Horário
+                    </th>
+                    <th>
+                        Motorista
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="feedback">
+            <h3>
+                Nos ajude a melhorar!
+            </h3>
+            <a class="cadastro" href="http://goo.gl/forms/GYVDfZuhWg" rel="noopener" target="_blank">
+                Deixe aqui sua opinião/sugestão
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  <script type="text/javascript" src="main.1d67b2f23a7083cc1bf9.js"></script></body>
+<html>
