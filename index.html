@@ -18,29 +18,40 @@
     <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
     <meta name="theme-color" content="#004e89">
 
-    <style type="text/css">
-      ﻿@media only screen and (max-device-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px){table,thead,tbody,th,td,tr{display:block}th{font-weight:bold}thead tr{position:absolute;top:-9999px;left:-9999px}tr{border:1px solid #000000}td{border:none;border-bottom:1px solid #000000;position:relative;padding-left:30% !important}td:before{position:absolute;top:6px;left:6px;width:25%;padding-right:10px;white-space:nowrap;font-weight:bold}td:nth-of-type(1):before{content:"Rota"}td:nth-of-type(2):before{content:"Quando"}td:nth-of-type(3):before{content:"Horário"}td:nth-of-type(4):before{content:"Motorista"}td:nth-of-type(5):before{content:""}}body{font:14px/1.4 'Open Sans', Arial;margin:0;color:#212121}body,html,#page-wrap,#app{height:100%}#page-wrap{margin:0;width:100%}p{margin:20px 0}h3{margin:16px 0 12px 0}h4{color:#1A659E}ul{margin-bottom:2em}#passos{font-size:1.2em}td p{margin:0 30px 0 0;font-size:1em;font-style:italic;color:red}table{width:90%;border-collapse:collapse;margin:auto}tr:nth-of-type(odd){background-color:#f5f5f5}th{background-color:#303F9F;color:#FFFFFF;font-weight:bold;text-transform:uppercase;font-size:0.8em}td,th{padding:15px;border:1px solid #BDBDBD;text-align:left;width:auto}#button_offer{display:block;margin:0;background-color:#FF9800;color:#FFF;box-shadow:0.1em 0.1em 0.2em rgba(0,0,0,0.5);padding:0.8em;text-align:center;width:30%}#button_offer a{color:#fff;text-decoration:none;font-weight:bold}#button_carona{display:block;margin:0;background-color:#FF9800;color:#FFF;box-shadow:0.1em 0.1em 0.2em rgba(0,0,0,0.5);padding:0.4em;text-align:center}#button_carona a{color:#FFF;text-decoration:none;font-weight:bold}#ask_ride{display:inline;float:left;width:20%}#header{display:inline-block;width:100%;margin:auto}#header h1{color:#FFFFFF;font-size:2em;margin:0.4em 0 0 0}#header h2{font-size:1.0em;margin:0 0 0.8em 0;font-style:italic;font-weight:300;color:#FFFFFF}#topbar{background-color:#303F9F;display:block;margin:0}#how_to{display:block;width:60%;padding:2% 5%;text-align:left;float:left}#title{padding:5px 0 5px 5%;width:50%;display:inline-block}#title h1{font-weight:bold}#dar_carona{display:block;width:20%;margin:1%;border-radius:0.4em;border:solid 1px #20BF55;background-color:#EFEFD0;padding:12px;text-align:center;float:left}#feedback{display:inline-block;margin:40px 30%;width:30%;border-radius:0.4em;background-color:#C5CAE9;padding:20px;text-align:center}#feedback h3{margin-top:0}#feedback a{color:#212121}a .cadastro{padding-bottom:12px;color:#A80874}a .logo{color:#FFFFFF;text-decoration:none}.depende{padding-left:12px;color:red}.sim{padding-left:12px;color:green}#main_menu{padding-top:0.7%;width:25%;display:inline-block;margin-left:15%;vertical-align:top;float:right}#title_img{float:left;width:80px;padding-right:10px}#app-login{height:100%;display:flex;align-items:center;justify-content:center;background-color:#303F9F}.password-step{animation:slide-in 0.5s forwards}@keyframes slide-in{0%{opacity:0}10%{transform:translateX(150%);opacity:1}100%{transform:translateX(0%)}}#login{padding:80px 40px;background-color:#fff;overflow:hidden;width:100%;max-width:380px;box-sizing:border-box;box-shadow:0 0.5em 0.5em rgba(0,0,0,0.1)}#login h2{text-align:center;text-transform:uppercase;color:#757575}#login input{width:100%;height:40px;border:none;border-bottom:1px solid #BDBDBD;margin:0 0 30px;padding:0;box-sizing:border-box}#login input:focus{outline:none !important;border-color:#303F9F}#login input[type="submit"]{background-color:#FF9800;text-transform:uppercase;color:#FFF;border:none;margin-bottom:0}
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.cbd52a347589b91136d9f92d08c1bd86.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
   </head>
   <body>
     <div id="page-wrap"><div id="app">
     <div id="app-login">
-        <div id="login">
-            <div>
-                <h2>
-                    Login
-                </h2>
-                <form>
-                    <div>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3" id="login">
+                <div>
+                    <h2>
+                        Login
+                    </h2>
+                    <form>
                         <div>
+                            <div>
+                            </div>
+                            <div class="input-field">
+                                <input id="email" type="email" value="">
+                                </input>
+                                <label htmlFor="email">
+                                    Email
+                                </label>
+                            </div>
+                            <button class="waves-effect waves-light btn-large">
+                                <i class="material-icons right">
+                                    forward
+                                </i>
+                                Próximo
+                            </button>
                         </div>
-                        <input placeholder="Email" type="email" value="">
-                        </input>
-                        <input type="submit" value="->">
-                        </input>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -53,5 +64,7 @@
         });
       }
     </script>
-  <script type="text/javascript" src="main.8e778fef80d996d6a959.js"></script></body>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="main.354ada0faa60b5d72be2.js"></script></body>
 <html>
